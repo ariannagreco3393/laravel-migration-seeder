@@ -12173,3 +12173,54 @@ fieldset:disabled .btn {
   }
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.flex {
+  display: flex;
+}
+
+.list-style-none {
+  list-style: none;
+}
+
+header {
+  background-color: #000000;
+}
+
+header .main-nav {
+  padding: 16px;
+}
+
+header .main-nav .main-menu {
+  justify-content: center;
+}
+
+header .main-nav .main-menu .menu-item {
+  margin-right: 15px;
+}
+
+header .main-nav .main-menu .menu-item .menu-item-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+header .main-nav .main-menu .menu-item .menu-item-link:hover {
+  color: #96c471;
+}
+
+footer {
+  background-color: yellow;
+  height: 100px;
+}
+
+main {
+  height: 600px;
+  background-color: red;
+}
+

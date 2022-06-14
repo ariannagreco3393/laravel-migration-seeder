@@ -1,2 +1,13 @@
 //
 @use 'bootstrap';
+
+@import "./partials/variables";
+@import "./partials/utilities";
+@import "./partials/header";
+@import "./partials/footer";
+
+
+main {
+    height: 600px;
+    background-color: red;
+}
