@@ -12219,8 +12219,10 @@ footer {
   height: 100px;
 }
 
-main {
-  height: 600px;
-  background-color: red;
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
