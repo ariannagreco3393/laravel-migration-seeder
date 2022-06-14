@@ -17,14 +17,8 @@ Route::get('/', function () {
     return view('welcome');
 })->name('welcome');
 
-Route::get('/pacchetti-viaggio', function () {
-    return view('pacchetti-viaggio');
-})->name('pacchetti');
+Route::get('/pacchetti-viaggio', 'PacchettiController@index')->name('pacchetti');
 
-Route::get('/destinazioni', function () {
-    return view('destinazioni');
-})->name('destinazioni');
+Route::get('/destinazioni', 'DestinazioniController@index')->name('destinazioni');
 
-Route::get('/contatti', function () {
-    return view('contatti');
-})->name('contatti');
+Route::get('/contatti', 'ContattiController@index')->name('contatti');
