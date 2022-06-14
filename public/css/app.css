@@ -12189,7 +12189,7 @@ fieldset:disabled .btn {
 }
 
 header {
-  background-color: #000000;
+  background-color: rgb(68, 146, 68);
 }
 
 header .main-nav {
@@ -12202,6 +12202,12 @@ header .main-nav .main-menu {
 
 header .main-nav .main-menu .menu-item {
   margin-right: 15px;
+}
+
+header .main-nav .main-menu .menu-item .active {
+  text-decoration: underline;
+  background-color: rgb(57, 188, 57);
+  padding: 0.5rem;
 }
 
 header .main-nav .main-menu .menu-item .menu-item-link {

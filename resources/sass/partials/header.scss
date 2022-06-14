@@ -1,11 +1,16 @@
 header {
-    background-color: $secondary-color;
+    background-color: rgb(68, 146, 68);
     .main-nav {
         padding: 16px;
         .main-menu {
             justify-content: center;
             .menu-item {
                 margin-right: 15px;
+                .active {
+                    text-decoration: underline;
+                    background-color: rgb(57, 188, 57);
+                    padding: 0.5rem;
+                }
                 .menu-item-link {
                     text-decoration: none;
                     text-transform: uppercase;

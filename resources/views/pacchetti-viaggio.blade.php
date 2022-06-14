@@ -1,7 +1,7 @@
-@section('head-title', 'VP Travel | Pacchetti' )
+@extends('layouts.main')
+
+@section('head-title', 'VP Travel Home' )
 
 @section('main-content')
-    <div class="container-main flex">
-    <h1>Pacchetti di viaggio</h1>
-</div>
+    <h1>pacchetti viaggio</h1>
 @endsection
