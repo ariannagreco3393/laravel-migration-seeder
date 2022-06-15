@@ -12232,3 +12232,17 @@ body {
   justify-content: space-between;
 }
 
+.packages-travel {
+  flex-direction: column;
+  padding: 20px;
+}
+
+.packages-travel h2 {
+  color: #96c471;
+  margin: 15px 0;
+}
+
+.packages-travel .list-travels .travel-item {
+  padding: 15px 0;
+}
+

@@ -13,3 +13,18 @@ body {
     flex-direction: column;
     justify-content: space-between;
   }
+
+
+  .packages-travel {
+    flex-direction: column;
+    padding: 20px;
+    h2 {
+        color: $primary-color;
+        margin: 15px 0;
+    }
+    .list-travels {
+        .travel-item {
+            padding: 15px 0;
+        }
+    }
+}

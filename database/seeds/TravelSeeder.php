@@ -1,12 +1,9 @@
 <?php
 
+use App\Models\Travel;
+
+
 use Illuminate\Database\Seeder;
-
-// Use Faker
-use Faker\Generator as Faker;
-
-//Importazione modello
-use App\Travel;
 
 
 class TravelSeeder extends Seeder
@@ -16,23 +13,24 @@ class TravelSeeder extends Seeder
      *
      * @return void
      */
-    public function run(Faker $faker)
+    public function run()
     {
+        $travels = config('db.travels');
         //Creazione 20 pacchetti di viaggio (rows)
-        for ($i=0; $i < 20; $i++) { 
+        foreach ($travels as $travel) {
             // creazione nuova istanza di Travel
             $new_travel = new Travel();
 
-          
-            $new_travel->name = $faker->text(30);
-            $new_travel->destination = $faker->text(12);
-            $new_travel->departure_date = $faker->dateTimeBetween('+1 week', '+2 week');
-            $new_travel->return_date = $faker->dateTimeBetween('+2 week', '+3 week');
-            $new_travel->description = $faker->paragraph(3);
-            $new_travel->days = $faker->numberBetween(0, 16);
-            // Salvare i dati nel DB
-            $new_travel->save();
+            // Popolazione delle colonne
+            $new_travel->name = $travel['name'];
+            $new_travel->destination = $travel['destination'];
+            $new_travel->departure_date = $travel['departure_date'];
+            $new_travel->return_date = $travel['return_date'];
+            $new_travel->description = $travel['description'];
+            $new_travel->days = $travel['days'];
         }
 
+        // Salvare i dati nel DB
+        $new_travel->save();
     }
 }
